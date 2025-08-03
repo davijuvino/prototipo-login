@@ -1,11 +1,18 @@
 import { Component } from '@angular/core';
+import { CommonModule } from '@angular/common';
 
 @Component({
   selector: 'app-loading',
-  imports: [],
-  templateUrl: './loading.component.html',
-  styleUrl: './loading.component.scss'
+  standalone: true,
+  imports: [CommonModule],
+  template: `
+    <div class="loading-spinner">
+      <div></div>
+      <div></div>
+      <div></div>
+      <div></div>
+    </div>
+  `,
+  styleUrls: ['./loading.component.scss']
 })
-export class LoadingComponent {
-
-}
+export class LoadingComponent {}

@@ -1,1 +1,4 @@
-<p>notification works!</p>
+<div class="notification-content">
+    <span class="notification-message">{{ notificationService.message() }}</span>
+    <button class="close-button" (click)="closeNotification()">&times;</button>
+  </div>
